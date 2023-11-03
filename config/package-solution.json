@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sharecloud-test-exercise-client-side-solution",
+    "id": "1cbc4baa-32fe-410d-906e-3d05343db491",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "sharecloud-test-exercise description"
+      },
+      "longDescription": {
+        "default": "sharecloud-test-exercise description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "sharecloud-test-exercise Feature",
+        "description": "The feature that activates elements of the sharecloud-test-exercise solution.",
+        "id": "0094f7af-fa81-4eb8-870b-2fc10e44a450",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/sharecloud-test-exercise.sppkg"
+  }
+}
