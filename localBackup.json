@@ -1,528 +1,719 @@
 {
     "server": {
-      "host": "localhost",
-      "port": 3000,
-      "protocol": "http",
-      "api": "api",
-      "devServiceWorker": false,
-      "useOutputCacheTagging": false,
-      "useOutputCache": false,
-      "outputCacheDefaultTtl": 86400,
-      "availableCacheTags": ["product", "category", "home", "checkout", "page-not-found", "compare", "my-account", "P", "C", "error"],
-      "invalidateCacheKey": "H7wxJ85s",
-      "dynamicConfigReload": false,
-      "dynamicConfigContinueOnError": false,
-      "dynamicConfigExclude": ["ssr", "storeViews", "entities", "localForage", "shipping", "boost", "query"],
-      "dynamicConfigInclude": [],
-      "elasticCacheQuota": 4096,
-      "ssrDisabledFor": {
-        "extensions": [".png", ".gif", ".jpg", ".jpeg", ".woff", ".eot", ".woff2", ".ttf", ".svg", ".css", ".js", ".json", ".ico", ".tiff", ".tif", ".raw"]
-      }
+        "host": "localhost",
+        "port": 3000,
+        "protocol": "http",
+        "api": "api",
+        "devServiceWorker": false,
+        "useOutputCacheTagging": false,
+        "useOutputCache": false,
+        "outputCacheDefaultTtl": 86400,
+        "availableCacheTags": [
+            "product",
+            "category",
+            "home",
+            "checkout",
+            "page-not-found",
+            "compare",
+            "my-account",
+            "P",
+            "C",
+            "error"
+        ],
+        "invalidateCacheKey": "H7wxJ85s",
+        "dynamicConfigReload": false,
+        "dynamicConfigContinueOnError": false,
+        "dynamicConfigExclude": [
+            "ssr",
+            "storeViews",
+            "entities",
+            "localForage",
+            "shipping",
+            "boost",
+            "query"
+        ],
+        "dynamicConfigInclude": [],
+        "elasticCacheQuota": 4096,
+        "ssrDisabledFor": {
+            "extensions": [
+                ".png",
+                ".gif",
+                ".jpg",
+                ".jpeg",
+                ".woff",
+                ".eot",
+                ".woff2",
+                ".ttf",
+                ".svg",
+                ".css",
+                ".js",
+                ".json",
+                ".ico",
+                ".tiff",
+                ".tif",
+                ".raw"
+            ]
+        }
     },
     "seo": {
-      "useUrlDispatcher": true
+        "useUrlDispatcher": true
     },
     "console": {
-      "showErrorOnProduction" : true,
-      "verbosityLevel": "display-everything"
+        "showErrorOnProduction": true,
+        "verbosityLevel": "display-everything"
     },
     "redis": {
-      "host": "localhost",
-      "port": 6379,
-      "db": 0
+        "host": "localhost",
+        "port": 6379,
+        "db": 0
     },
-    "graphql":{
-      "host": "localhost",
-      "port": 8080
+    "graphql": {
+        "host": "localhost",
+        "port": 8080
     },
     "api": {
-      "url": "https://prelive.vsf-api.klick.ee"
+        "url": "https://prelive.vsf-api.klick.ee"
     },
     "homepage": {
-      "sliderCategoryName": "Parimad pakkumised",
-      "sliderCategoryUrl": "parimad-pakkumised"
+        "sliderCategoryName": "Parimad pakkumised",
+        "sliderCategoryUrl": "parimad-pakkumised"
     },
     "sitemap": {
-      "apiUrl": "https://prelive.vsf-api.klick.ee/api/ext/ambientia-sitemap/sitemap"
+        "apiUrl": "https://prelive.vsf-api.klick.ee/api/ext/ambientia-sitemap/sitemap"
     },
     "magento": {
-      "url": "https://prelive.magento.klick.ee",
-      "badgesManagerMediaUrl": "https://prelive.magento.klick.ee/media/badgesmanager/",
-      "bannersMediaUrl": "https://prelive.magento.klick.ee/media/bannersmanager/"
+        "url": "https://prelive.magento.klick.ee",
+        "badgesManagerMediaUrl": "https://prelive.magento.klick.ee/media/badgesmanager/",
+        "bannersMediaUrl": "https://prelive.magento.klick.ee/media/bannersmanager/"
     },
     "magentoApi": {
-      "url": "https://prelive.magento.klick.ee/rest",
-      "leasingCheck": "https://prelive.magento.klick.ee/rest/V1/leasing/payments/byperiods?price={{price}}",
-      "productShippingData": "https://prelive.magento.klick.ee/rest/V1/product/shippingdata?sku={{sku}}",
-      "productAvailabilityData": "https://prelive.magento.klick.ee/rest/V1/product/storedata?sku={{sku}}",
-      "getAllBannersUrl": "https://prelive.magento.klick.ee/rest/V1/ambientia-bannersmanager/getallbanners",
-      "shopsData": "https://prelive.magento.klick.ee/rest/V1/storage/shopdata"
+        "url": "https://prelive.magento.klick.ee/rest",
+        "leasingCheck": "https://prelive.magento.klick.ee/rest/V1/leasing/payments/byperiods?price={{price}}",
+        "productShippingData": "https://prelive.magento.klick.ee/rest/V1/product/shippingdata?sku={{sku}}",
+        "productAvailabilityData": "https://prelive.magento.klick.ee/rest/V1/product/storedata?sku={{sku}}",
+        "getAllBannersUrl": "https://prelive.magento.klick.ee/rest/V1/ambientia-bannersmanager/getallbanners",
+        "shopsData": "https://prelive.magento.klick.ee/rest/V1/storage/shopdata"
     },
     "googleMaps": {
-      "key": "AIzaSyACr5fVs1gdoLW67TSCe6V-CiUzPxTkgxk"
+        "key": "AIzaSyACr5fVs1gdoLW67TSCe6V-CiUzPxTkgxk"
     },
     "zopim": {
-      "key": "3bxc6821uTMRzXHvDcpkwnPQCMBx37aJ"
+        "key": "3bxc6821uTMRzXHvDcpkwnPQCMBx37aJ"
     },
     "klevu": {
-      "sv": "1.2.5",
-      "cloudSearchHostURL": "eucs18.ksearchnet.com",
-      "ticket": "klevu-15841061761132273",
-      "storeViews": {
-        "et": {
-          "ticket": "klevu-15841061761132273",
-          "cloudSearchHostURL": "eucs18.ksearchnet.com"
-        },
-        "en": {
-          "ticket": "klevu-15841061761132273",
-          "cloudSearchHostURL": "eucs18.ksearchnet.com"
+        "sv": "1.2.5",
+        "cloudSearchHostURL": "eucs18.ksearchnet.com",
+        "ticket": "klevu-15841061761132273",
+        "storeViews": {
+            "et": {
+                "ticket": "klevu-15841061761132273",
+                "cloudSearchHostURL": "eucs18.ksearchnet.com"
+            },
+            "en": {
+                "ticket": "klevu-15841061761132273",
+                "cloudSearchHostURL": "eucs18.ksearchnet.com"
+            }
         }
-      }
     },
     "synchronizer": {
-      "url": "https://prelive.synchronizer.klick.ee",
-      "customerOrderList": "https://prelive.synchronizer.klick.ee/customer/order-list/{{token}}",
-      "storeBooking": "https://prelive.synchronizer.klick.ee/store-booking"
-  
+        "url": "https://prelive.synchronizer.klick.ee",
+        "customerOrderList": "https://prelive.synchronizer.klick.ee/customer/order-list/{{token}}",
+        "storeBooking": "https://prelive.synchronizer.klick.ee/store-booking"
     },
     "elasticsearch": {
-      "httpAuth": "",
-      "host": "https://prelive.vsf-api.klick.ee/api/catalog",
-      "index": "vue_storefront_catalog_klick",
-      "min_score": 0.02,
-      "csrTimeout": 5000,
-      "ssrTimeout": 1000,
-      "queryMethod": "GET",
-      "disableLocalStorageQueriesCache": true,
-      "searchScoring": {
-        "attributes": {
-          "attribute_code": {
-            "scoreValues": { "attribute_value": { "weight": 1 } }
-          }
+        "httpAuth": "",
+        "host": "https://prelive.vsf-api.klick.ee/api/catalog",
+        "index": "vue_storefront_catalog_klick",
+        "min_score": 0.02,
+        "csrTimeout": 5000,
+        "ssrTimeout": 1000,
+        "queryMethod": "GET",
+        "disableLocalStorageQueriesCache": true,
+        "searchScoring": {
+            "attributes": {
+                "attribute_code": {
+                    "scoreValues": { "attribute_value": { "weight": 1 } }
+                }
+            },
+            "fuzziness": 2,
+            "cutoff_frequency": 0.01,
+            "max_expansions": 3,
+            "minimum_should_match": "75%",
+            "prefix_length": 2,
+            "boost_mode": "multiply",
+            "score_mode": "multiply",
+            "max_boost": 100,
+            "function_min_score": 1
         },
-        "fuzziness": 2,
-        "cutoff_frequency":  0.01,
-        "max_expansions": 3,
-        "minimum_should_match": "75%",
-        "prefix_length": 2,
-        "boost_mode": "multiply",
-        "score_mode": "multiply",
-        "max_boost": 100,
-        "function_min_score": 1
-      },
-      "searchableAttributes": {
-        "name": {
-          "boost": 4
-        },
-        "sku": {
-          "boost": 2
-        },
-        "category.name": {
-          "boost": 1
+        "searchableAttributes": {
+            "name": {
+                "boost": 4
+            },
+            "sku": {
+                "boost": 2
+            },
+            "category.name": {
+                "boost": 1
+            }
         }
-      }
     },
     "ssr": {
-      "templates": {
-        "default": "dist/index.html",
-        "minimal": "dist/index.minimal.html",
-        "basic": "dist/index.basic.html",
-        "amp": "dist/index.amp.html"
-      },
-      "executeMixedinAsyncData": true,
-      "initialStateFilter": ["__DEMO_MODE__", "version", "storeView"],
-      "useInitialStateFilter": true
+        "templates": {
+            "default": "dist/index.html",
+            "minimal": "dist/index.minimal.html",
+            "basic": "dist/index.basic.html",
+            "amp": "dist/index.amp.html"
+        },
+        "executeMixedinAsyncData": true,
+        "initialStateFilter": ["__DEMO_MODE__", "version", "storeView"],
+        "useInitialStateFilter": true
     },
-    "availableStores": [
-      "ee"
-  
-    ],
+    "availableStores": ["ee"],
     "storeViews": {
-      "multistore": false,
-      "commonCache": true
+        "multistore": false,
+        "commonCache": true
     },
     "layeredNavigation": {
-      "enableProductsLeftCounter": false,
-      "pagePortionSize": 200
+        "enableProductsLeftCounter": false,
+        "pagePortionSize": 200
     },
     "entities": {
-      "optimize": true,
-      "twoStageCaching": true,
-      "optimizeShoppingCart": true,
-      "category": {
-        "includeFields": [ "id", "*.children_data.id", "*.id", "children_count", "sku", "name", "is_active", "parent_id", "level", "url_key", "url_path", "product_count", "path", "include_in_menu", "position", "allow_compare", "meta_description", "meta_keywords", "display_mode", "landing_page", "page_layout"],
-        "excludeFields": [ "sgn" ],
-        "categoriesRootCategorylId": 2,
-        "categoriesDynamicPrefetchLevel": 4,
-        "categoriesDynamicPrefetch": true,
-        "enableLevel2ProductListing": [60]
-      },
-      "attribute": {
-        "includeFields": [ "attribute_code", "id", "entity_type_id", "options", "default_value", "is_user_defined", "frontend_label", "attribute_id", "default_frontend_label", "is_visible_on_front", "is_visible", "is_comparable", "tier_prices", "frontend_input" ]
-      },
-      "productList": {
-        "sort": "final_price:asc",
-        "includeFields": [ "type_id", "sku", "configurable_options", "product_links", "tax_class_id", "special_price", "special_to_date", "special_from_date", "name", "price", "priceInclTax", "originalPriceInclTax", "originalPrice", "specialPriceInclTax", "id", "image", "sale", "new", "url_path", "url_key", "status", "tier_prices", "configurable_children.sku", "configurable_children.price", "configurable_children.special_price", "configurable_children.image", "configurable_children.priceInclTax", "configurable_children.specialPriceInclTax", "configurable_children.originalPrice", "configurable_children.originalPriceInclTax", "offerNo", "min_month_payment", "category_ids"],
-        "excludeFields": [ "description", "sgn", "*.sgn", "msrp_display_actual_price_type", "*.msrp_display_actual_price_type", "required_options" ]
-      },
-      "productListWithChildren": {
-        "includeFields": [ "type_id", "sku", "configurable_options", "name", "tax_class_id", "special_price", "special_to_date", "special_from_date", "price", "priceInclTax", "originalPriceInclTax", "originalPrice", "specialPriceInclTax", "id", "image", "sale", "new", "configurable_children.image", "configurable_children.sku", "configurable_children.price", "configurable_children.special_price", "configurable_children.priceInclTax", "configurable_children.specialPriceInclTax", "configurable_children.originalPrice", "configurable_children.originalPriceInclTax", "configurable_children.color", "configurable_children.size", "configurable_children.id", "configurable_children.tier_prices", "product_links", "url_path", "url_key", "status", "tier_prices", "offerNo", "min_month_payment", "category_ids"],
-        "excludeFields": [ "description", "sgn", "*.sgn", "msrp_display_actual_price_type", "*.msrp_display_actual_price_type", "required_options"]
-      },
-      "review": {
-        "excludeFields": ["review_entity", "review_status"]
-      },
-      "product": {
-        "excludeFields": [ "*.msrp_display_actual_price_type", "required_options", "updated_at", "created_at", "attribute_set_id", "options_container", "msrp_display_actual_price_type", "has_options", "stock.manage_stock", "stock.use_config_min_qty", "stock.use_config_notify_stock_qty", "stock.stock_id",  "stock.use_config_backorders", "stock.use_config_enable_qty_inc", "stock.enable_qty_increments", "stock.use_config_manage_stock", "stock.use_config_min_sale_qty", "stock.notify_stock_qty", "stock.use_config_max_sale_qty", "stock.use_config_max_sale_qty", "stock.qty_increments", "small_image", "sgn", "*.sgn"],
-        "includeFields": null,
-        "useDynamicAttributeLoader": true,
-        "standardSystemFields": [
-          "description",
-          "configurable_options",
-          "tsk",
-          "custom_attributes",
-          "size_options",
-          "regular_price",
-          "final_price",
-          "price",
-          "color_options",
-          "id",
-          "links",
-          "gift_message_available",
-          "category_ids",
-          "sku",
-          "stock",
-          "image",
-          "thumbnail",
-          "visibility",
-          "type_id",
-          "tax_class_id",
-          "media_gallery",
-          "url_key",
-          "url_path",
-          "max_price",
-          "minimal_regular_price",
-          "special_price",
-          "minimal_price",
-          "name",
-          "meta_keywords",
-          "meta_description",
-          "configurable_children",
-          "max_regular_price",
-          "category",
-          "status",
-          "priceTax",
-          "priceInclTax",
-          "specialPriceTax",
-          "specialPriceInclTax",
-          "_score",
-          "slug",
-          "errors",
-          "info",
-          "erin_recommends",
-          "special_from_date",
-          "news_from_date",
-          "custom_design_from",
-          "originalPrice",
-          "originalPriceInclTax",
-          "parentSku",
-          "options",
-          "product_option",
-          "qty",
-          "is_configured",
-          "user_manual_url",
-          "min_month_payment"
-        ]
-      }
+        "optimize": true,
+        "twoStageCaching": true,
+        "optimizeShoppingCart": true,
+        "category": {
+            "includeFields": [
+                "id",
+                "*.children_data.id",
+                "*.id",
+                "children_count",
+                "sku",
+                "name",
+                "is_active",
+                "parent_id",
+                "level",
+                "url_key",
+                "url_path",
+                "product_count",
+                "path",
+                "include_in_menu",
+                "position",
+                "allow_compare",
+                "meta_description",
+                "meta_keywords",
+                "display_mode",
+                "landing_page",
+                "page_layout"
+            ],
+            "excludeFields": ["sgn"],
+            "categoriesRootCategorylId": 2,
+            "categoriesDynamicPrefetchLevel": 4,
+            "categoriesDynamicPrefetch": true,
+            "enableLevel2ProductListing": [60]
+        },
+        "attribute": {
+            "includeFields": [
+                "attribute_code",
+                "id",
+                "entity_type_id",
+                "options",
+                "default_value",
+                "is_user_defined",
+                "frontend_label",
+                "attribute_id",
+                "default_frontend_label",
+                "is_visible_on_front",
+                "is_visible",
+                "is_comparable",
+                "tier_prices",
+                "frontend_input"
+            ]
+        },
+        "productList": {
+            "sort": "final_price:asc",
+            "includeFields": [
+                "type_id",
+                "sku",
+                "configurable_options",
+                "product_links",
+                "tax_class_id",
+                "special_price",
+                "special_to_date",
+                "special_from_date",
+                "name",
+                "price",
+                "priceInclTax",
+                "originalPriceInclTax",
+                "originalPrice",
+                "specialPriceInclTax",
+                "id",
+                "image",
+                "sale",
+                "new",
+                "url_path",
+                "url_key",
+                "status",
+                "tier_prices",
+                "configurable_children.sku",
+                "configurable_children.price",
+                "configurable_children.special_price",
+                "configurable_children.image",
+                "configurable_children.priceInclTax",
+                "configurable_children.specialPriceInclTax",
+                "configurable_children.originalPrice",
+                "configurable_children.originalPriceInclTax",
+                "offerNo",
+                "min_month_payment",
+                "category_ids"
+            ],
+            "excludeFields": [
+                "description",
+                "sgn",
+                "*.sgn",
+                "msrp_display_actual_price_type",
+                "*.msrp_display_actual_price_type",
+                "required_options"
+            ]
+        },
+        "productListWithChildren": {
+            "includeFields": [
+                "type_id",
+                "sku",
+                "configurable_options",
+                "name",
+                "tax_class_id",
+                "special_price",
+                "special_to_date",
+                "special_from_date",
+                "price",
+                "priceInclTax",
+                "originalPriceInclTax",
+                "originalPrice",
+                "specialPriceInclTax",
+                "id",
+                "image",
+                "sale",
+                "new",
+                "configurable_children.image",
+                "configurable_children.sku",
+                "configurable_children.price",
+                "configurable_children.special_price",
+                "configurable_children.priceInclTax",
+                "configurable_children.specialPriceInclTax",
+                "configurable_children.originalPrice",
+                "configurable_children.originalPriceInclTax",
+                "configurable_children.color",
+                "configurable_children.size",
+                "configurable_children.id",
+                "configurable_children.tier_prices",
+                "product_links",
+                "url_path",
+                "url_key",
+                "status",
+                "tier_prices",
+                "offerNo",
+                "min_month_payment",
+                "category_ids"
+            ],
+            "excludeFields": [
+                "description",
+                "sgn",
+                "*.sgn",
+                "msrp_display_actual_price_type",
+                "*.msrp_display_actual_price_type",
+                "required_options"
+            ]
+        },
+        "review": {
+            "excludeFields": ["review_entity", "review_status"]
+        },
+        "product": {
+            "excludeFields": [
+                "*.msrp_display_actual_price_type",
+                "required_options",
+                "updated_at",
+                "created_at",
+                "attribute_set_id",
+                "options_container",
+                "msrp_display_actual_price_type",
+                "has_options",
+                "stock.manage_stock",
+                "stock.use_config_min_qty",
+                "stock.use_config_notify_stock_qty",
+                "stock.stock_id",
+                "stock.use_config_backorders",
+                "stock.use_config_enable_qty_inc",
+                "stock.enable_qty_increments",
+                "stock.use_config_manage_stock",
+                "stock.use_config_min_sale_qty",
+                "stock.notify_stock_qty",
+                "stock.use_config_max_sale_qty",
+                "stock.use_config_max_sale_qty",
+                "stock.qty_increments",
+                "small_image",
+                "sgn",
+                "*.sgn"
+            ],
+            "includeFields": null,
+            "useDynamicAttributeLoader": true,
+            "standardSystemFields": [
+                "description",
+                "configurable_options",
+                "tsk",
+                "custom_attributes",
+                "size_options",
+                "regular_price",
+                "final_price",
+                "price",
+                "color_options",
+                "id",
+                "links",
+                "gift_message_available",
+                "category_ids",
+                "sku",
+                "stock",
+                "image",
+                "thumbnail",
+                "visibility",
+                "type_id",
+                "tax_class_id",
+                "media_gallery",
+                "url_key",
+                "url_path",
+                "max_price",
+                "minimal_regular_price",
+                "special_price",
+                "minimal_price",
+                "name",
+                "meta_keywords",
+                "meta_description",
+                "configurable_children",
+                "max_regular_price",
+                "category",
+                "status",
+                "priceTax",
+                "priceInclTax",
+                "specialPriceTax",
+                "specialPriceInclTax",
+                "_score",
+                "slug",
+                "errors",
+                "info",
+                "erin_recommends",
+                "special_from_date",
+                "news_from_date",
+                "custom_design_from",
+                "originalPrice",
+                "originalPriceInclTax",
+                "parentSku",
+                "options",
+                "product_option",
+                "qty",
+                "is_configured",
+                "user_manual_url",
+                "min_month_payment"
+            ]
+        }
     },
     "cart": {
-      "thumbnails": {
-        "width": 150,
-        "height": 150
-      },
-      "bypassCartLoaderForAuthorizedUsers": true,
-      "serverMergeByDefault": true,
-      "serverSyncCanRemoveLocalItems": true,
-      "serverSyncCanModifyLocalItems": true,
-      "synchronize": true,
-      "synchronize_totals": true,
-      "setCustomProductOptions": true,
-      "setConfigurableProductOptions": true,
-      "askBeforeRemoveProduct": true,
-      "displayItemDiscounts": true,
-      "minicartCountType": "quantities",
-      "create_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/create?token={{token}}",
-      "updateitem_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/update?token={{token}}&cartId={{cartId}}",
-      "deleteitem_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/delete?token={{token}}&cartId={{cartId}}",
-      "pull_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/pull?token={{token}}&cartId={{cartId}}",
-      "totals_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/totals?token={{token}}&cartId={{cartId}}",
-      "paymentmethods_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/payment-methods?token={{token}}&cartId={{cartId}}",
-      "shippingmethods_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/shipping-methods?token={{token}}&cartId={{cartId}}",
-      "shippinginfo_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/shipping-information?token={{token}}&cartId={{cartId}}",
-      "collecttotals_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/collect-totals?token={{token}}&cartId={{cartId}}",
-      "deletecoupon_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/delete-coupon?token={{token}}&cartId={{cartId}}",
-      "applycoupon_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/apply-coupon?token={{token}}&cartId={{cartId}}&coupon={{coupon}}",
-      "payment_api_generate_redirect":"https://prelive.payment-api.klick.ee/redirect-data",
-      "payment_api_confirmation":"https://prelive.payment-api.klick.ee/payment-confirmation/{token}",
-      "order_reference_endpoint": "https://prelive.magento.klick.ee/rest/all/V1/cart/order-reference",
-      "disableAutoselectPaymentMethod": true
+        "thumbnails": {
+            "width": 150,
+            "height": 150
+        },
+        "bypassCartLoaderForAuthorizedUsers": true,
+        "serverMergeByDefault": true,
+        "serverSyncCanRemoveLocalItems": true,
+        "serverSyncCanModifyLocalItems": true,
+        "synchronize": true,
+        "synchronize_totals": true,
+        "setCustomProductOptions": true,
+        "setConfigurableProductOptions": true,
+        "askBeforeRemoveProduct": true,
+        "displayItemDiscounts": true,
+        "minicartCountType": "quantities",
+        "create_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/create?token={{token}}",
+        "updateitem_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/update?token={{token}}&cartId={{cartId}}",
+        "deleteitem_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/delete?token={{token}}&cartId={{cartId}}",
+        "pull_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/pull?token={{token}}&cartId={{cartId}}",
+        "totals_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/totals?token={{token}}&cartId={{cartId}}",
+        "paymentmethods_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/payment-methods?token={{token}}&cartId={{cartId}}",
+        "shippingmethods_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/shipping-methods?token={{token}}&cartId={{cartId}}",
+        "shippinginfo_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/shipping-information?token={{token}}&cartId={{cartId}}",
+        "collecttotals_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/collect-totals?token={{token}}&cartId={{cartId}}",
+        "deletecoupon_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/delete-coupon?token={{token}}&cartId={{cartId}}",
+        "applycoupon_endpoint": "https://prelive.vsf-api.klick.ee/api/cart/apply-coupon?token={{token}}&cartId={{cartId}}&coupon={{coupon}}",
+        "payment_api_generate_redirect": "https://prelive.payment-api.klick.ee/redirect-data",
+        "payment_api_confirmation": "https://prelive.payment-api.klick.ee/payment-confirmation/{token}",
+        "order_reference_endpoint": "https://prelive.magento.klick.ee/rest/all/V1/cart/order-reference",
+        "disableAutoselectPaymentMethod": true
     },
     "products": {
-      "useMagentoUrlKeys": true,
-      "setFirstVarianAsDefaultInURL": false,
-      "configurableChildrenStockPrefetchStatic": false,
-      "configurableChildrenStockPrefetchDynamic": false,
-      "configurableChildrenStockPrefetchStaticPrefetchCount": 8,
-      "filterUnavailableVariants": false,
-      "listOutOfStockProducts": true,
-      "preventConfigurableChildrenDirectAccess": true,
-      "alwaysSyncPlatformPricesOver": false,
-      "clearPricesBeforePlatformSync": false,
-      "waitForPlatformSync": false,
-      "setupVariantByAttributeCode": true,
-      "endpoint": "https://prelive.vsf-api.klick.ee/api/product",
-      "giftproduct_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-giftproducts/getproductgiftproducts?productId={{productId}}",
-      "giftproduct_cart_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-giftproducts/checkcart/{{token}}",
-      "giftproduct_cart_add_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-giftproducts/addtocart/{{token}}/{{sku}}",
-      "filterFieldMapping": {
-        "category.name": "category.name.keyword"
-      },
-      "colorMappings": {
-        "Melange graphite": "#etetet"
-      },
-      "defaultSortBy": {
-        "attribute": "final_price",
-        "order": "asc"
-      },
-      "sortByAttributes": {
-        "Latest": "updated_at",
-        "Price: Low to high":"final_price",
-        "Price: High to low":"final_price:desc"
-      },
-      "gallery": {
-        "variantsGroupAttribute": "color",
-        "mergeConfigurableChildren": false,
-        "imageAttributes": ["image","thumbnail","small_image"],
-        "width": 806,
-        "height": 1000
-      },
-      "thumbnails": {
-        "width": 310,
-        "height": 300
-      },
-      "filterAggregationSize": {
-        "default": 10,
-        "size": 10,
-        "color": 10
-      },
-      "priceFilters": {
-        "ranges": [
-          { "from": 0, "to": 50 },
-          { "from": 50, "to": 100 },
-          { "from": 100, "to": 150 },
-          { "from": 150 }
-        ]
-      },
-      "compare_endpoint": "https://prelive.synchronizer.klick.ee/product/attributes?sku={sku}"
+        "useMagentoUrlKeys": true,
+        "setFirstVarianAsDefaultInURL": false,
+        "configurableChildrenStockPrefetchStatic": false,
+        "configurableChildrenStockPrefetchDynamic": false,
+        "configurableChildrenStockPrefetchStaticPrefetchCount": 8,
+        "filterUnavailableVariants": false,
+        "listOutOfStockProducts": true,
+        "preventConfigurableChildrenDirectAccess": true,
+        "alwaysSyncPlatformPricesOver": false,
+        "clearPricesBeforePlatformSync": false,
+        "waitForPlatformSync": false,
+        "setupVariantByAttributeCode": true,
+        "endpoint": "https://prelive.vsf-api.klick.ee/api/product",
+        "giftproduct_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-giftproducts/getproductgiftproducts?productId={{productId}}",
+        "giftproduct_cart_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-giftproducts/checkcart/{{token}}",
+        "giftproduct_cart_add_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-giftproducts/addtocart/{{token}}/{{sku}}",
+        "filterFieldMapping": {
+            "category.name": "category.name.keyword"
+        },
+        "colorMappings": {
+            "Melange graphite": "#etetet"
+        },
+        "defaultSortBy": {
+            "attribute": "final_price",
+            "order": "asc"
+        },
+        "sortByAttributes": {
+            "Latest": "updated_at",
+            "Price: Low to high": "final_price",
+            "Price: High to low": "final_price:desc"
+        },
+        "gallery": {
+            "variantsGroupAttribute": "color",
+            "mergeConfigurableChildren": false,
+            "imageAttributes": ["image", "thumbnail", "small_image"],
+            "width": 806,
+            "height": 1000
+        },
+        "thumbnails": {
+            "width": 310,
+            "height": 300
+        },
+        "filterAggregationSize": {
+            "default": 10,
+            "size": 10,
+            "color": 10
+        },
+        "priceFilters": {
+            "ranges": [
+                { "from": 0, "to": 50 },
+                { "from": 50, "to": 100 },
+                { "from": 100, "to": 150 },
+                { "from": 150 }
+            ]
+        },
+        "compare_endpoint": "https://prelive.synchronizer.klick.ee/product/attributes?sku={sku}"
     },
     "orders": {
-      "directBackendSync": true,
-      "endpoint": "https://prelive.vsf-api.klick.ee/api/order",
-      "payment_methods_mapping": {
-      },
-      "offline_orders": {
-        "automatic_transmission_enabled": false,
-        "notification" : {
-          "enabled": true,
-          "title" : "Order waiting!",
-          "message": "Click here to confirm the order that you made offline.",
-          "icon": "/assets/logo.png"
+        "directBackendSync": true,
+        "endpoint": "https://prelive.vsf-api.klick.ee/api/order",
+        "payment_methods_mapping": {},
+        "offline_orders": {
+            "automatic_transmission_enabled": false,
+            "notification": {
+                "enabled": true,
+                "title": "Order waiting!",
+                "message": "Click here to confirm the order that you made offline.",
+                "icon": "/assets/logo.png"
+            }
         }
-      }
     },
     "localForage": {
-      "defaultDrivers": {
-        "user": "LOCALSTORAGE",
-        "cmspage": "LOCALSTORAGE",
-        "cmsblock": "LOCALSTORAGE",
-        "carts": "LOCALSTORAGE",
-        "orders": "LOCALSTORAGE",
-        "wishlist": "LOCALSTORAGE",
-        "categories": "LOCALSTORAGE",
-        "attributes": "LOCALSTORAGE",
-        "products": "INDEXEDDB",
-        "elasticCache": "LOCALSTORAGE",
-        "claims": "LOCALSTORAGE",
-        "syncTasks": "LOCALSTORAGE",
-        "ordersHistory": "LOCALSTORAGE",
-        "checkoutFieldValues": "LOCALSTORAGE",
-        "campaignbadge": "LOCALSTORAGE"
-      }
+        "defaultDrivers": {
+            "user": "LOCALSTORAGE",
+            "cmspage": "LOCALSTORAGE",
+            "cmsblock": "LOCALSTORAGE",
+            "carts": "LOCALSTORAGE",
+            "orders": "LOCALSTORAGE",
+            "wishlist": "LOCALSTORAGE",
+            "categories": "LOCALSTORAGE",
+            "attributes": "LOCALSTORAGE",
+            "products": "INDEXEDDB",
+            "elasticCache": "LOCALSTORAGE",
+            "claims": "LOCALSTORAGE",
+            "syncTasks": "LOCALSTORAGE",
+            "ordersHistory": "LOCALSTORAGE",
+            "checkoutFieldValues": "LOCALSTORAGE",
+            "campaignbadge": "LOCALSTORAGE"
+        }
     },
     "reviews": {
-      "create_endpoint": "https://prelive.vsf-api.klick.ee/api/review/create"
+        "create_endpoint": "https://prelive.vsf-api.klick.ee/api/review/create"
     },
     "users": {
-      "autoRefreshTokens": true,
-      "endpoint": "https://prelive.vsf-api.klick.ee/api/user",
-      "history_endpoint": "https://prelive.vsf-api.klick.ee/api/user/order-history?token={{token}}",
-      "resetPassword_endpoint": "https://prelive.vsf-api.klick.ee/api/user/reset-password",
-      "resetLinkToken_endpoint": "https://prelive.magento.klick.ee/rest/all/V1/customers/password/resetlinktoken/{{token}}",
-      "changePassword_endpoint": "https://prelive.vsf-api.klick.ee/api/user/change-password?token={{token}}",
-      "setNewPassword_endpoint": "/api/user/set-new-password",
-      "login_endpoint": "https://prelive.vsf-api.klick.ee/api/user/login",
-      "create_endpoint": "https://prelive.vsf-api.klick.ee/api/user/create",
-      "me_endpoint": "https://prelive.vsf-api.klick.ee/api/user/me?token={{token}}",
-      "refresh_endpoint": "https://prelive.vsf-api.klick.ee/api/user/refresh",
-      "auth_smartid_endpoint": "https://prelive.authentication-api.klick.ee/smart-id/auth",
-      "auth_smartid_status_endpoint": "https://prelive.authentication-api.klick.ee/smart-id/auth-status",
-      "auth_mobileid_endpoint": "https://prelive.authentication-api.klick.ee/mobile-id/auth",
-      "auth_mobileid_status_endpoint": "https://prelive.authentication-api.klick.ee/mobile-id/auth-status",
-      "auth_idcard_endpoint": "https://prelive.id-authentication-api.klick.ee/id-card/authenticate",
-      "auth_idcard_status_endpoint": "https://prelive.id-authentication-api.klick.ee/id-card/auth-status?token={{token}}&email={{email}}",
-      "auth_idcard_api_path": "https://prelive.id-authentication-api.klick.ee/id-card/authenticate?token={{token}}",
-      "login_idcard_status_endpoint": "https://prelive.id-authentication-api.klick.ee/id-card/login-status?token={{token}}",
-      "login_mobileid_endpoint":"https://prelive.authentication-api.klick.ee/mobile-id/login",
-      "login_smartid_endpoint":"https://prelive.authentication-api.klick.ee/smart-id/login",
-      "personaldata_query_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-gdpr/personaldataquery",
-      "permissions_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-gdpr/permissions"
+        "autoRefreshTokens": true,
+        "endpoint": "https://prelive.vsf-api.klick.ee/api/user",
+        "history_endpoint": "https://prelive.vsf-api.klick.ee/api/user/order-history?token={{token}}",
+        "resetPassword_endpoint": "https://prelive.vsf-api.klick.ee/api/user/reset-password",
+        "resetLinkToken_endpoint": "https://prelive.magento.klick.ee/rest/all/V1/customers/password/resetlinktoken/{{token}}",
+        "changePassword_endpoint": "https://prelive.vsf-api.klick.ee/api/user/change-password?token={{token}}",
+        "setNewPassword_endpoint": "/api/user/set-new-password",
+        "login_endpoint": "https://prelive.vsf-api.klick.ee/api/user/login",
+        "create_endpoint": "https://prelive.vsf-api.klick.ee/api/user/create",
+        "me_endpoint": "https://prelive.vsf-api.klick.ee/api/user/me?token={{token}}",
+        "refresh_endpoint": "https://prelive.vsf-api.klick.ee/api/user/refresh",
+        "auth_smartid_endpoint": "https://prelive.authentication-api.klick.ee/smart-id/auth",
+        "auth_smartid_status_endpoint": "https://prelive.authentication-api.klick.ee/smart-id/auth-status",
+        "auth_mobileid_endpoint": "https://prelive.authentication-api.klick.ee/mobile-id/auth",
+        "auth_mobileid_status_endpoint": "https://prelive.authentication-api.klick.ee/mobile-id/auth-status",
+        "auth_idcard_endpoint": "https://prelive.id-authentication-api.klick.ee/id-card/authenticate",
+        "auth_idcard_status_endpoint": "https://prelive.id-authentication-api.klick.ee/id-card/auth-status?token={{token}}&email={{email}}",
+        "auth_idcard_api_path": "https://prelive.id-authentication-api.klick.ee/id-card/authenticate?token={{token}}",
+        "login_idcard_status_endpoint": "https://prelive.id-authentication-api.klick.ee/id-card/login-status?token={{token}}",
+        "login_mobileid_endpoint": "https://prelive.authentication-api.klick.ee/mobile-id/login",
+        "login_smartid_endpoint": "https://prelive.authentication-api.klick.ee/smart-id/login",
+        "personaldata_query_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-gdpr/personaldataquery",
+        "permissions_endpoint": "https://prelive.magento.klick.ee/rest/V1/ambientia-gdpr/permissions"
     },
     "stock": {
-      "synchronize": true,
-      "allowOutOfStockInCart": false,
-      "endpoint": "https://prelive.vsf-api.klick.ee/api/stock"
+        "synchronize": true,
+        "allowOutOfStockInCart": false,
+        "endpoint": "https://prelive.vsf-api.klick.ee/api/stock"
     },
     "images": {
-      "usetxactUrlsNoProxy": false,
-      "baseUrl": "https://prelive.vsf-api.klick.ee/img/",
-      "productPlaceholder": "/assets/placeholder.jpg"
+        "usetxactUrlsNoProxy": false,
+        "baseUrl": "https://prelive.vsf-api.klick.ee/img/",
+        "productPlaceholder": "/assets/placeholder.jpg"
     },
     "install": {
-      "is_local_backend": true,
-      "backend_dir": "../vue-storefront-api"
+        "is_local_backend": true,
+        "backend_dir": "../vue-storefront-api"
     },
     "demomode": false,
     "tax": {
-      "defaultCountry": "EE",
-      "defaultRegion": "",
-      "sourcePriceIncludesTax": true,
-      "calculateServerSide": true
+        "defaultCountry": "EE",
+        "defaultRegion": "",
+        "sourcePriceIncludesTax": true,
+        "calculateServerSide": true
     },
     "shipping": {
-      "methods": [
-        {
-          "method_title": "DPD Courier",
-          "method_code": "flatrate",
-          "carrier_code": "flatrate",
-          "amount": 4,
-          "price_incl_tax": 5,
-          "default": true,
-          "offline": true
-        }
-      ]
+        "methods": [
+            {
+                "method_title": "DPD Courier",
+                "method_code": "flatrate",
+                "carrier_code": "flatrate",
+                "amount": 4,
+                "price_incl_tax": 5,
+                "default": true,
+                "offline": true
+            }
+        ]
     },
     "i18n": {
-      "defaultCountry": "EE",
-      "defaultLanguage": "ET",
-      "availableLocale": ["et-EE","en-US","de-DE","fr-FR","es-ES","nl-NL", "jp-JP", "ru-RU", "it-IT", "pt-BR", "pl-PL", "cs-CZ"],
-      "defaultLocale": "et-EE",
-      "currencyCode": "EUR",
-      "currencySign": "",
-      "currencySignPlacement": "preppend",
-      "dateFormat": "l LT",
-      "fullCountryName": "Estonia",
-      "fullLanguageName": "Estonian",
-      "bundleAllStoreviewLanguages": true
+        "defaultCountry": "EE",
+        "defaultLanguage": "ET",
+        "availableLocale": [
+            "et-EE",
+            "en-US",
+            "de-DE",
+            "fr-FR",
+            "es-ES",
+            "nl-NL",
+            "jp-JP",
+            "ru-RU",
+            "it-IT",
+            "pt-BR",
+            "pl-PL",
+            "cs-CZ"
+        ],
+        "defaultLocale": "et-EE",
+        "currencyCode": "EUR",
+        "currencySign": "",
+        "currencySignPlacement": "preppend",
+        "dateFormat": "l LT",
+        "fullCountryName": "Estonia",
+        "fullLanguageName": "Estonian",
+        "bundleAllStoreviewLanguages": true
     },
     "newsletter": {
-      "endpoint": "https://prelive.vsf-api.klick.ee/api/ext/mailchimp-subscribe/subscribe"
+        "endpoint": "https://prelive.vsf-api.klick.ee/api/ext/mailchimp-subscribe/subscribe"
     },
     "buyback": {
-      "gradingFormUrl": "https://prelive.vsf-api.klick.ee/api/ext/buyback/grading-form?id={{id}}",
-      "modelsUrl": "https://prelive.vsf-api.klick.ee/api/ext/buyback/models?term={{term}}",
-      "priceQuoteUrl": "https://prelive.vsf-api.klick.ee/api/ext/buyback/price-quote"
+        "gradingFormUrl": "https://prelive.vsf-api.klick.ee/api/ext/buyback/grading-form?id={{id}}",
+        "modelsUrl": "https://prelive.vsf-api.klick.ee/api/ext/buyback/models?term={{term}}",
+        "priceQuoteUrl": "https://prelive.vsf-api.klick.ee/api/ext/buyback/price-quote"
     },
     "mailer": {
-      "endpoint": {
-        "send": "https://prelive.vsf-api.klick.ee/api/ext/mail-service/send-email",
-        "token": "https://prelive.vsf-api.klick.ee/api/ext/mail-service/get-token"
-      },
-      "contactAddress": "contributors@vuestorefront.io",
-      "sendConfirmation": true
+        "endpoint": {
+            "send": "https://prelive.vsf-api.klick.ee/api/ext/mail-service/send-email",
+            "token": "https://prelive.vsf-api.klick.ee/api/ext/mail-service/get-token"
+        },
+        "contactAddress": "contributors@vuestorefront.io",
+        "sendConfirmation": true
     },
     "theme": "@vue-storefront/theme-ambientia",
     "analytics": {
-      "id": "UA-4211834-8"
+        "id": "UA-4211834-8"
     },
     "googleTagManager": {
-      "id": "GTM-WDVFDZ",
-      "debug": true
+        "id": "GTM-WDVFDZ",
+        "debug": true
     },
     "hotjar": {
-      "id": "1022716"
+        "id": "1022716"
     },
     "inaddress": {
-      "endpoint": "/api/inaddress/address?address={{address}}",
-      "zip_endpoint": "https://geoportaal.maaamet.ee/url/pi.php?adr_id={{adr_id}}&out=json"
+        "endpoint": "/api/inaddress/address?address={{address}}",
+        "zip_endpoint": "https://geoportaal.maaamet.ee/url/pi.php?adr_id={{adr_id}}&out=json"
     },
     "cms": {
-      "endpoint": "https://prelive.vsf-api.klick.ee/api/ext/cms-data/cms{{type}}/{{cmsId}}",
-      "endpointIdentifier": "https://prelive.vsf-api.klick.ee/api/ext/cms-data/cms{{type}}Identifier/{{cmsIdentifier}}/storeId/{{storeId}}"
+        "endpoint": "https://prelive.vsf-api.klick.ee/api/ext/cms-data/cms{{type}}/{{cmsId}}",
+        "endpointIdentifier": "https://prelive.vsf-api.klick.ee/api/ext/cms-data/cms{{type}}Identifier/{{cmsIdentifier}}/storeId/{{storeId}}"
     },
     "cms_block": {
-      "max_count": 500
+        "max_count": 500
     },
     "cms_page": {
-      "max_count": 500
+        "max_count": 500
     },
     "usePriceTiers": false,
     "useZeroPriceProduct": true,
     "query": {
-      "inspirations": {
-        "filter": [
-          {
-            "key": "category.name",
-            "value" : { "eq": "Parimad pakkumised" }
-          }
-        ]
-      },
-      "newProducts": {
-        "filter": [
-          {
-            "key": "category.name",
-            "value" : { "eq": "Tets" }
-          }
-        ]
-      },
-      "coolBags": {
-        "filter": [
-          {
-            "key": "category.name",
-            "value" : { "eq": "Women" }
-          }
-        ]
-      },
-      "bestSellers": {
-        "filter": [
-          {
-            "key": "category.name",
-            "value" : { "eq": "Tets" }
-          }
-        ]
-      }
+        "inspirations": {
+            "filter": [
+                {
+                    "key": "category.name",
+                    "value": { "eq": "Parimad pakkumised" }
+                }
+            ]
+        },
+        "newProducts": {
+            "filter": [
+                {
+                    "key": "category.name",
+                    "value": { "eq": "Tets" }
+                }
+            ]
+        },
+        "coolBags": {
+            "filter": [
+                {
+                    "key": "category.name",
+                    "value": { "eq": "Women" }
+                }
+            ]
+        },
+        "bestSellers": {
+            "filter": [
+                {
+                    "key": "category.name",
+                    "value": { "eq": "Tets" }
+                }
+            ]
+        }
     },
     "ambientia-instalment": {
-      "field_list_endpoint" : "https://prelive.payment-api.klick.ee/instalment/field-list",
-      "create_endpoint" : "https://prelive.payment-api.klick.ee/instalment/create",
-      "offers_endpoint" : "https://prelive.payment-api.klick.ee/instalment/offers/{token}",
-      "token_valid_endpoint": "https://prelive.authentication-api.klick.ee/token-valid/{token}"
+        "field_list_endpoint": "https://prelive.payment-api.klick.ee/instalment/field-list",
+        "create_endpoint": "https://prelive.payment-api.klick.ee/instalment/create",
+        "offers_endpoint": "https://prelive.payment-api.klick.ee/instalment/offers/{token}",
+        "token_valid_endpoint": "https://prelive.authentication-api.klick.ee/token-valid/{token}"
     },
     "ambientia_everypay": {
-      "get_credit_card_data_entry_point": "https://prelive.payment-api.klick.ee/everypay/credit-card-data/{payment_token}"
+        "get_credit_card_data_entry_point": "https://prelive.payment-api.klick.ee/everypay/credit-card-data/{payment_token}"
     },
     "cross_sell": {
-      "group_data_entry_point": "https://prelive.synchronizer.klick.ee/product/cross-sell/group-list/{sku}",
-      "group_product_data_entry_point": "https://prelive.synchronizer.klick.ee/product/cross-sell/group-product-list/{group_slug}/{sku}"
+        "group_data_entry_point": "https://prelive.synchronizer.klick.ee/product/cross-sell/group-list/{sku}",
+        "group_product_data_entry_point": "https://prelive.synchronizer.klick.ee/product/cross-sell/group-product-list/{group_slug}/{sku}"
     }
-  }
-  
+}

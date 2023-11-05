@@ -1,21 +1,21 @@
 {
-  "@microsoft/generator-sharepoint": {
-    "plusBeta": false,
-    "isCreatingSolution": true,
-    "nodeVersion": "20.9.0",
-    "sdksVersions": {
-      "@microsoft/microsoft-graph-client": "3.0.2",
-      "@microsoft/teams-js": "2.12.0"
-    },
-    "version": "1.18.0",
-    "libraryName": "sharecloud-test-exercise",
-    "libraryId": "1cbc4baa-32fe-410d-906e-3d05343db491",
-    "environment": "spo",
-    "packageManager": "npm",
-    "solutionName": "sharecloud-test-exercise",
-    "solutionShortDescription": "sharecloud-test-exercise description",
-    "skipFeatureDeployment": true,
-    "isDomainIsolated": false,
-    "componentType": "webpart"
-  }
+    "@microsoft/generator-sharepoint": {
+        "plusBeta": false,
+        "isCreatingSolution": true,
+        "nodeVersion": "20.9.0",
+        "sdksVersions": {
+            "@microsoft/microsoft-graph-client": "3.0.2",
+            "@microsoft/teams-js": "2.12.0"
+        },
+        "version": "1.18.0",
+        "libraryName": "sharecloud-test-exercise",
+        "libraryId": "1cbc4baa-32fe-410d-906e-3d05343db491",
+        "environment": "spo",
+        "packageManager": "npm",
+        "solutionName": "sharecloud-test-exercise",
+        "solutionShortDescription": "sharecloud-test-exercise description",
+        "skipFeatureDeployment": true,
+        "isDomainIsolated": false,
+        "componentType": "webpart"
+    }
 }
