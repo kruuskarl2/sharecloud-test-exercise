@@ -1,0 +1,48 @@
+@use '../../variables' as v;
+
+.root {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.quarter {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+%button {
+    display: block;
+    height: 2.2rem;
+    aspect-ratio: 1/1;
+    border-style: none;
+    transition: background-color 0.15s;
+    opacity: 1;
+    cursor: pointer;
+    color: v.$button_color;
+    background: url(../../assets/Next.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+
+    &:hover {
+        background-color: v.$background-hover;
+    }
+
+    &:active {
+        background-color: v.$background-active;
+    }
+}
+
+.changeQuarterButton {
+    &__previous {
+        @extend%button;
+        transform: scaleX(-1);
+    }
+
+    &__next {
+        @extend%button;
+    }
+}
