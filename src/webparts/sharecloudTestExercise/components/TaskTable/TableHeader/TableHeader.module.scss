@@ -1,0 +1,15 @@
+@use '../../../variables' as v;
+
+.weekNumber {
+    border: 1px solid v.$gray-transparent;
+    color: v.$background-dark;
+    font-weight: 500;
+}
+
+.header {
+    background: v.$background-dark;
+    color: v.$text-color-light;
+    height: 2rem;
+    border: 1px solid v.$gray-transparent;
+    font-weight: 500;
+}

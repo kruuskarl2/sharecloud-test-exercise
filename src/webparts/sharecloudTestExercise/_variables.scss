@@ -1,18 +1,17 @@
 $font-family: 'Roboto', sans-serif;
 
-$blue: rgb(0, 120, 212);
-$dark-blue: rgb(0, 99, 174);
+$purple: #7d1538;
 $white: rgb(255, 255, 255);
 $black: rgb(34, 35, 31);
 $lightgray-transparent: rgba(0, 0, 0, 0.1);
 $gray-transparent: rgba(0, 0, 0, 0.15);
 
-$button-color-dark: $blue;
+$button-color-dark: $purple;
 $button-color-light: $white;
 
 $text-color-dark: $black;
 $text-color-light: $white;
 
-$background-dark: $blue;
+$background-dark: $purple;
 $background-hover: $lightgray-transparent;
 $background-active: $gray-transparent;

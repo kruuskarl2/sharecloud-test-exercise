@@ -6,9 +6,9 @@ const QuarterPicker: React.FC<IQuarterPickerProps> = (
 ) => {
     const { currentQuarter, goToNextQuarter, goToLastQuarter } = props;
 
-    const { quarterNumber, year } = currentQuarter;
+    const { index, year } = currentQuarter;
 
-    const quarterInfo = `Quarter ${quarterNumber}, ${year}`;
+    const quarterInfo = `Quarter ${index + 1}, ${year}`;
 
     return (
         <div className={classes.root}>

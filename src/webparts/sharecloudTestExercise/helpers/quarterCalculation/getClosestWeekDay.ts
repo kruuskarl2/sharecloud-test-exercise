@@ -19,4 +19,13 @@ const getClosestWeekDay = (dayIndex: number, date: Date): Date => {
 
     return closestDay;
 };
-export { getClosestWeekDay };
+
+const getClosestMonday = (date: Date): Date => {
+    return getClosestWeekDay(1, date);
+};
+
+const getClosestSunday = (date: Date): Date => {
+    return getClosestWeekDay(0, date);
+};
+
+export { getClosestWeekDay, getClosestMonday, getClosestSunday };
