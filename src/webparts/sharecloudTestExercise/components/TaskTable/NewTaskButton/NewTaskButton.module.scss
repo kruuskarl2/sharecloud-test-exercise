@@ -1,0 +1,23 @@
+@use '../../../variables' as v;
+
+.root {
+    height: 3rem;
+    aspect-ratio: 1/1;
+    background-image: url('../../../assets/plus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-style: none;
+    transition: background-color 0.15s;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+        background-color: v.$background-hover;
+    }
+
+    &:active {
+        background-color: v.$background-active;
+        border: 1px solid v.$button-color-dark;
+    }
+}
