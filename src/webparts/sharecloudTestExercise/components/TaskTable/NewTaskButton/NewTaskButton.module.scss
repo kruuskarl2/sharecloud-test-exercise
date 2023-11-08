@@ -8,7 +8,9 @@
     background-position: center;
     background-size: 20px;
     border-style: none;
-    transition: background-color 0.15s;
+    transition:
+        background-color 0.15s,
+        border 0.1s;
     cursor: pointer;
     padding: 0;
 

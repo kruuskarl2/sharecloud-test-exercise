@@ -19,7 +19,9 @@
     height: 3rem;
     aspect-ratio: 1/1;
     border-style: none;
-    transition: background-color 0.15s;
+    transition:
+        background-color 0.15s,
+        border 0.1s;
     cursor: pointer;
     background: url(../../assets/next.svg);
     background-size: 16px;

@@ -3,6 +3,7 @@ import {
     PropsWithChildren,
     SetStateAction,
     createContext,
+    useContext,
     useState,
 } from 'react';
 import { ITask } from './ITask';
@@ -14,7 +15,7 @@ type TaskContextType = {
 
 export const TaskContext = createContext<TaskContextType | null>(null);
 
-export const SectionProvider = ({
+export const TaskContextProvider = ({
     children,
 }: PropsWithChildren<{}>): JSX.Element => {
     const [tasks, setTasks] = useState([]);
@@ -26,4 +27,16 @@ export const SectionProvider = ({
     );
 };
 
-export default SectionProvider;
+export const useTaskContext = (): TaskContextType => {
+    const context = useContext(TaskContext);
+
+    if (!context) {
+        throw new Error(
+            'useTaskContext must be used inside the TaskContextProvider'
+        );
+    }
+
+    return context;
+};
+
+export default TaskContextProvider;

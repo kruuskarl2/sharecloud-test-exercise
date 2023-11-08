@@ -1,17 +1,20 @@
 $font-family: 'Roboto', sans-serif;
 
-$purple: #7d1538;
+$purple: rgb(125, 21, 56);
 $white: rgb(255, 255, 255);
-$black: rgb(34, 35, 31);
 $lightgray-transparent: rgba(0, 0, 0, 0.1);
 $gray-transparent: rgba(0, 0, 0, 0.15);
+$darkgray-transparent: rgba(0, 0, 0, 0.4);
 
 $button-color-dark: $purple;
 $button-color-light: $white;
 
-$text-color-dark: $black;
+$text-color-dark: $purple;
 $text-color-light: $white;
+$text-color-transparent: $darkgray-transparent;
 
 $background-dark: $purple;
+$background-light: $white;
 $background-hover: $lightgray-transparent;
 $background-active: $gray-transparent;
+$background-overlay: $gray-transparent;
