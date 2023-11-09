@@ -3,6 +3,7 @@ import * as ReactDom from 'react-dom';
 import { Version } from '@microsoft/sp-core-library';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
+
 import * as strings from 'SharecloudTestExerciseWebPartStrings';
 import SharecloudTestExercise from './components/SharecloudTestExercise';
 import { ISharecloudTestExerciseProps } from './components/ISharecloudTestExerciseProps';

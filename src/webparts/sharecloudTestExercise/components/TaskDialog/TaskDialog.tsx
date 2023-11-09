@@ -1,7 +1,9 @@
 import { useRef, useState } from 'react';
+
 import { ITaskDialogProps } from './ITaskDialogProps';
-import classes from './TaskDialog.module.scss';
 import { useTaskContext } from '../../context/TaskContext';
+
+import classes from './TaskDialog.module.scss';
 
 const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
     const { onClose, header, action, taskIndex } = props;

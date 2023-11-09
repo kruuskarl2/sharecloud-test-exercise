@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import classes from './SharecloudTestExercise.module.scss';
+
 import type { ISharecloudTestExerciseProps } from './ISharecloudTestExerciseProps';
 import { getQuarter } from '../helpers/quarterCalculation/getQuarter';
 import { IQuarter } from '../helpers/quarterCalculation/IQuarter';
 import QuarterPicker from './QuarterPicker';
 import TaskTable from './TaskTable';
 import TaskContextProvider from '../context/TaskContext';
+
+import classes from './SharecloudTestExercise.module.scss';
 
 const SharecloudTestExercise: React.FC<ISharecloudTestExerciseProps> = () => {
     const [currentQuarter, setCurrentQuarter] = useState<IQuarter>(

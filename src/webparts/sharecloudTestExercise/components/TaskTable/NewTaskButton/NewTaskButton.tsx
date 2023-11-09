@@ -1,6 +1,8 @@
 import { Suspense, lazy, useState } from 'react';
-import classes from './NewTaskButton.module.scss';
+
 import { useTaskContext } from '../../../context/TaskContext';
+
+import classes from './NewTaskButton.module.scss';
 
 const TaskDialog = lazy(
     () =>

@@ -1,10 +1,12 @@
+import { Suspense, lazy, useState } from 'react';
+
 import { ITaskTableProps } from './ITaskTableProps';
 import TableHeader from './TableHeader/TableHeader';
-import classes from './TaskTable.module.scss';
 import NewTaskButton from './NewTaskButton/NewTaskButton';
 import { useTaskContext } from '../../context/TaskContext';
 import Task from './Task/Task';
-import { Suspense, lazy, useState } from 'react';
+
+import classes from './TaskTable.module.scss';
 
 const TaskDialog = lazy(
     () =>

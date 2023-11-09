@@ -1,4 +1,5 @@
 import { ITableHeaderProps } from './ITableHeaderProps';
+
 import classes from './TableHeader.module.scss';
 
 const TableHeader: React.FC<ITableHeaderProps> = (props: ITableHeaderProps) => {
