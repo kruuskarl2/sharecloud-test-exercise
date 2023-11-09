@@ -1,16 +1,42 @@
 @use '../../../variables' as v;
 
 .root {
-    transition: background 0.2s;
+    transition: box-shadow 0.2s;
     cursor: pointer;
     height: 2rem;
+    position: relative;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
 
-    &:hover {
-        background: v.$background-hover;
+    .description {
+        position: absolute;
+        background: v.$background-light;
+        padding: 1rem;
+        left: 0;
+        top: 2rem;
+        box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+        z-index: 5;
+        max-width: 25rem;
+
+        .textContent {
+            display: -webkit-box;
+            -webkit-line-clamp: 15;
+            -webkit-box-orient: vertical;
+            text-align: left;
+            line-break: auto;
+            white-space: pre-line;
+            overflow: hidden;
+        }
     }
 
-    &:active {
-        background: v.$background-active;
+    &:hover .description {
+        opacity: 1;
+    }
+
+    &:hover {
+        box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -19,8 +45,19 @@
     padding: 0;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .activeLine {
     background: v.$background-dark;
     margin: 25% 0;
     height: 0.5rem;
+    opacity: 0;
+    animation: fadeIn 0.2s forwards;
 }

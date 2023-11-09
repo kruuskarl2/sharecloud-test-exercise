@@ -78,7 +78,7 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
                     defaultValue={defaultDesc}
                 />
                 <div className={classes.dates}>
-                    <div>
+                    <div className={classes.dateContainer}>
                         <label htmlFor="">Start Date</label>
                         <input
                             type="date"
@@ -90,7 +90,7 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
                             )}
                         />
                     </div>
-                    <div>
+                    <div className={classes.dateContainer}>
                         <label htmlFor="endDate">End Date</label>
                         <input
                             type="date"

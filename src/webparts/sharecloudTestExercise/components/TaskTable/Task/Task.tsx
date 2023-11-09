@@ -5,7 +5,7 @@ import classes from './Task.module.scss';
 const Task: React.FC<ITaskProps> = (props: ITaskProps) => {
     const { task, months, onModifyTask, index } = props;
 
-    const { title, startDate, endDate } = task;
+    const { title, startDate, endDate, description } = task;
 
     const weekCells: JSX.Element[] = [];
 
@@ -40,6 +40,9 @@ const Task: React.FC<ITaskProps> = (props: ITaskProps) => {
             <td>{formatDate(startDate)}</td>
             <td>{formatDate(endDate)}</td>
             {weekCells}
+            <div className={classes.description}>
+                <div className={classes.textContent}>{description}</div>
+            </div>
         </tr>
     );
 };
