@@ -1,7 +1,7 @@
-import { getPreviousWeekDay } from './getPreviousWeekDay';
+import { getPreviousMonday } from './getPreviousWeekDay';
 
 const getQuarterNumberByDate = (date: Date = new Date()): number => {
-    const previousMonday = getPreviousWeekDay(1, date);
+    const previousMonday = getPreviousMonday(date);
 
     const mondaysMonth = previousMonday.getMonth();
 

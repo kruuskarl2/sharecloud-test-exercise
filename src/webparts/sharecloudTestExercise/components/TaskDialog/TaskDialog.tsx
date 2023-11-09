@@ -31,6 +31,9 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
             return;
         }
 
+        startDate.setHours(0, 0, 0, 0);
+        endDate.setHours(0, 0, 0, 0);
+
         const newTasks = [...tasks];
         newTasks.push({
             startDate,
@@ -52,6 +55,7 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
                     ref={titleRef}
                     className={classes.input__title}
                     placeholder="Title"
+                    maxLength={30}
                 />
                 <textarea
                     ref={descriptionRef}

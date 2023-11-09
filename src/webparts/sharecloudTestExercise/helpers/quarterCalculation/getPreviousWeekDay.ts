@@ -13,4 +13,8 @@ const getPreviousWeekDay = (dayIndex: number, date: Date): Date => {
     return previousDay;
 };
 
-export { getPreviousWeekDay };
+const getPreviousMonday = (date: Date): Date => {
+    return getPreviousWeekDay(1, date);
+};
+
+export { getPreviousWeekDay, getPreviousMonday };

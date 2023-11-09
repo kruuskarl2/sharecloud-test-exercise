@@ -1,0 +1,26 @@
+@use '../../../variables' as v;
+
+.root {
+    transition: background 0.2s;
+    cursor: pointer;
+    height: 2rem;
+
+    &:hover {
+        background: v.$background-hover;
+    }
+
+    &:active {
+        background: v.$background-active;
+    }
+}
+
+.weekCell {
+    border: 1px solid v.$background-hover;
+    padding: 0;
+}
+
+.activeLine {
+    background: v.$background-dark;
+    margin: 25% 0;
+    height: 0.5rem;
+}

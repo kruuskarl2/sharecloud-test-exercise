@@ -5,6 +5,7 @@ import { getQuarter } from '../helpers/quarterCalculation/getQuarter';
 import { IQuarter } from '../helpers/quarterCalculation/IQuarter';
 import QuarterPicker from './QuarterPicker';
 import TaskTable from './TaskTable';
+import TaskContextProvider from '../context/TaskContext';
 
 const SharecloudTestExercise: React.FC<ISharecloudTestExerciseProps> = () => {
     const [currentQuarter, setCurrentQuarter] = useState<IQuarter>(
@@ -25,12 +26,14 @@ const SharecloudTestExercise: React.FC<ISharecloudTestExerciseProps> = () => {
 
     return (
         <div className={classes.root}>
-            <QuarterPicker
-                currentQuarter={currentQuarter}
-                goToLastQuarter={goToLastQuarter}
-                goToNextQuarter={goToNextQuarter}
-            />
-            <TaskTable currentQuarter={currentQuarter} />
+            <TaskContextProvider>
+                <QuarterPicker
+                    currentQuarter={currentQuarter}
+                    goToLastQuarter={goToLastQuarter}
+                    goToNextQuarter={goToNextQuarter}
+                />
+                <TaskTable currentQuarter={currentQuarter} />
+            </TaskContextProvider>
         </div>
     );
 };
