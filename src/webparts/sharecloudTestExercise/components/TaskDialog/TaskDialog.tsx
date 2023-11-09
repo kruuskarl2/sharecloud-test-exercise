@@ -4,7 +4,7 @@ import classes from './TaskDialog.module.scss';
 import { useTaskContext } from '../../context/TaskContext';
 
 const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
-    const { onClose } = props;
+    const { onClose, header, action, taskIndex } = props;
 
     const [error, setError] = useState('');
 
@@ -12,6 +12,8 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
     const descriptionRef = useRef<HTMLTextAreaElement>(null);
     const startDateRef = useRef<HTMLInputElement>(null);
     const endDateRef = useRef<HTMLInputElement>(null);
+
+    const taskIndexExists = taskIndex !== undefined;
 
     const { tasks, setTasks } = useTaskContext();
 
@@ -35,32 +37,45 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
         endDate.setHours(0, 0, 0, 0);
 
         const newTasks = [...tasks];
-        newTasks.push({
+        const newTask = {
             startDate,
             endDate,
             title,
             description,
-        });
+        };
+
+        if (taskIndexExists) newTasks[taskIndex] = newTask;
+        else newTasks.push(newTask);
+
         setTasks(newTasks);
 
         onClose();
     };
 
+    const defaultTitle = taskIndexExists ? tasks[taskIndex].title : '';
+    const defaultDesc = taskIndexExists ? tasks[taskIndex].description : '';
+    const defaultStartDate = taskIndexExists
+        ? tasks[taskIndex].startDate
+        : null;
+    const defaultEndDate = taskIndexExists ? tasks[taskIndex].endDate : null;
+
     return (
         <div className={classes.root}>
             <div className={classes.dialog}>
-                <h3 className={classes.header}>Create a new task</h3>
+                <h3 className={classes.header}>{header}</h3>
                 <input
                     type="text"
                     ref={titleRef}
                     className={classes.input__title}
                     placeholder="Title"
                     maxLength={30}
+                    defaultValue={defaultTitle}
                 />
                 <textarea
                     ref={descriptionRef}
                     className={classes.input__description}
                     placeholder="Description"
+                    defaultValue={defaultDesc}
                 />
                 <div className={classes.dates}>
                     <div>
@@ -70,6 +85,9 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
                             ref={startDateRef}
                             className={classes.input__date}
                             name={'startDate'}
+                            defaultValue={defaultStartDate?.toLocaleDateString(
+                                'en-CA'
+                            )}
                         />
                     </div>
                     <div>
@@ -79,6 +97,9 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
                             ref={endDateRef}
                             className={classes.input__date}
                             name={'endDate'}
+                            defaultValue={defaultEndDate?.toLocaleDateString(
+                                'en-CA'
+                            )}
                         />
                     </div>
                 </div>
@@ -88,7 +109,7 @@ const TaskDialog: React.FC<ITaskDialogProps> = (props: ITaskDialogProps) => {
                         className={classes.actionButton}
                         onClick={onModifyTasks}
                     >
-                        Create
+                        {action}
                     </button>
                     <button className={classes.actionButton} onClick={onClose}>
                         Cancel

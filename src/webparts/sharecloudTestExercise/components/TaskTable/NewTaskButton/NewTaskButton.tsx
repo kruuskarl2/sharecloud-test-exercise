@@ -23,7 +23,13 @@ const NewTaskButton: React.FC = () => {
         <>
             <button className={classes.root} onClick={onOpen} />
             <Suspense fallback={null}>
-                {isOpen ? <TaskDialog onClose={onClose} /> : null}
+                {isOpen ? (
+                    <TaskDialog
+                        onClose={onClose}
+                        header={'Create a new task'}
+                        action={'Create'}
+                    />
+                ) : null}
             </Suspense>
         </>
     );

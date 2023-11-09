@@ -3,7 +3,7 @@ import { ITaskProps } from './ITaskProps';
 import classes from './Task.module.scss';
 
 const Task: React.FC<ITaskProps> = (props: ITaskProps) => {
-    const { task, months } = props;
+    const { task, months, onModifyTask, index } = props;
 
     const { title, startDate, endDate } = task;
 
@@ -35,7 +35,7 @@ const Task: React.FC<ITaskProps> = (props: ITaskProps) => {
     });
 
     return (
-        <tr className={classes.root}>
+        <tr className={classes.root} onClick={() => onModifyTask(index)}>
             <td>{title}</td>
             <td>{formatDate(startDate)}</td>
             <td>{formatDate(endDate)}</td>
