@@ -22,4 +22,9 @@
         background-color: v.$background-active;
         border: 1px solid v.$button-color-dark;
     }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
 }
